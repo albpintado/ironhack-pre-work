@@ -1,6 +1,6 @@
 class NumberInWord {
   public static void main(String[] args) {
-    printNumberToWord(17);
+    printNumberToWord(67);
   }
 
   public static void printNumberToWord(int number) {
@@ -18,10 +18,10 @@ class NumberInWord {
   }
 
   public static String convertComplexNumberToWord(int number) {
-    String[] oneDigitNumbers = { "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
+    String[] oneDigitNumbers = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
     String[] dozens = { "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" };
     int firstDigit = number / 10;
     int secondDigit = number % 10;
-    return dozens[firstDigit - 2] + "-" + oneDigitNumbers[secondDigit];
+    return dozens[firstDigit - 2] + "-" + oneDigitNumbers[secondDigit - 1];
   }
 }
