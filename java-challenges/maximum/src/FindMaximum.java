@@ -1,5 +1,3 @@
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
-
 class FindMaximum {
   public static void main(String[] args) {
     int[] numberList = {2, -6, 101, 100, 7};
